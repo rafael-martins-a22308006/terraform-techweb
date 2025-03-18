@@ -8,12 +8,10 @@ terraform {
 
 provider "google" {
   project     = var.project_name
-  region      = var.region
   credentials = "./environments/prod/prod.json"
 }
 
 provider "google-beta" {
   project     = var.project_name
-  region      = var.region
   credentials = "./environments/prod/prod.json"
 }
